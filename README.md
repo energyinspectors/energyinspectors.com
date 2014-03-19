@@ -15,26 +15,32 @@ Developers' build package for EnergyInspectors.com.  Built with [HTML5Boilerplat
     - `src/fonts/`
     - all other files and directories are automatically compiled from these, and can and should be ignored, make site changes only in the above directories and files.
 
-5.  build and view unminified test version:
+###Build
+
+1.  build and view unminified test version:
     - `grunt test`  (compiled output in ./test)
     - `grunt connect:test`
     - http://localhost:3000
 
-6.  build and view minified production version:
+2.  build and view minified production version:
     - `grunt dist`  (compiled output in ./dist)
     - `grunt connect:dist`
     - http://localhost:3001
 
-7.  build and view minified and gziped production version:
+3.  build and view minified and gziped production version:
     - not quite working yet, but the gzip process is:
     - `grunt gzip`
     - `grunt connect:dist`
     - http://localhost:3001
 
-8.  update H5BP, Fancybox, JQuery, and other third party components:
+###Update
+
+1.  update H5BP, Fancybox, JQuery, and other third party components:
     1. `npm update`  (update everything in package.json file and ./npm_modules directory)
     2. `bower update` (update all bower components in bower.json and ./bower_components directory)
     3. build system takes care of the rest, automatically copies h5bp, jquery, etc into build, test, and dist targets
+
+###Notes
 
 When running `grunt test` or `grunt dist`, the process works like this:
 
